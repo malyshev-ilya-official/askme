@@ -1,0 +1,125 @@
+.small-img {
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+
+}
+
+.my-middle-img {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+
+}
+
+.my-header {
+    height: fit-content;
+    background-color: aliceblue;
+}
+
+.my-footer {
+    height: fit-content;
+    width: auto;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+
+.my-header-title {
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    height: fit-content;
+    width: fit-content;
+    margin: 20px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+    border: solid 3px;
+    border-color: black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.my-ask-form {
+    height: fit-content;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.question-card {
+    border: 1px dashed;
+    border-radius: 10px;
+    border-color: black;
+    width: auto;
+    height: fit-content;
+    margin: 50px;
+    padding: 20px;
+}
+
+.answer-card {
+    border: 1px dashed;
+    border-radius: 0px;
+    border-color: grey;
+    width: auto;
+    height: fit-content;
+    margin: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.my-text {
+    border: 1px dashed;
+    border-radius: 10px;
+    border-color: red;
+    width: auto;
+    height: fit-content;
+    margin: 20px;
+    padding: 10px;
+}
+
+.test {
+    border: 1px dashed;
+    border-color: black;
+    border-radius: 1px;
+}
+  
+.my-small-user-card {
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.my-centered {
+    height: fit-content;
+    width: fit-content;
+    margin: 10px;
+}
+
+.my-big-text {
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.my-title {
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin: 20px;
+}
+
+  
