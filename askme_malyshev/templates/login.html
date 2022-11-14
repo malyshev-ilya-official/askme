@@ -1,198 +1,27 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
 
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block main_column %}
 
-        <title>AskMeMalyshev</title>
-
-        <link rel="stylesheet" href="../static/css/bootstrap.css">
-        <link rel="stylesheet" href="../static/css/my_styles.css">
-    </head>
-
-    <body>
-        <header>
-            <div class="my-header">
-                <div class="row">
-
-
-
-                    <div class="col-4 my-header-title">
-                        <div>
-                            <a href="#" class="nav-link">AskMeMalyshev</a>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="col-4">
-                        <form class="d-flex my-ask-form" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Ask" aria-label="Ask">
-                            <button class="btn btn-outline-success" type="submit">Ask</button>
-                        </form>
-                    </div>
-
-
-
-                    <div class="col-4">
-                        
-
-
-                        <div class="my-small-user-card">
-                            <div class="row">
-                                <div class="col-4">
-                                    <img src="../static/img/default_picture.jpg" class="small-img" alt="photo">
-                                </div>
-    
-                                <div class="col-8">
-                                    <div>
-                                        <h4>Your name</h4>
-                                    </div>
-
-                                    <nav class="nav nav-fill">
-                                        <a class="nav-link" style="padding-left: 0px; padding-right: 0px;" href="#">settings</a>
-                                        <a class="nav-link" style="padding-left: 0px; padding-right: 0px;" href="#">logout</a>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-
-
-
-                    </div>
-                </div>
+    <form class="my-title">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control is-invalid" id="exampleInputPassword1" aria-describedby="validationServer05Feedback" required>
+            <div id="validationServer05Feedback" class="invalid-feedback">
+                Please provide a valid password.
             </div>
-        </header>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">LogIn</button>
+        or
+        <a href="#">register</a>
+    </form>
 
-        <main>
-            <div class="row">
-                <div class="col-8">
-                    
-
-
-
-
-
-
-                    
-                    <form class="my-title">
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control is-invalid" id="exampleInputPassword1" aria-describedby="validationServer05Feedback" required>
-                            <div id="validationServer05Feedback" class="invalid-feedback">
-                                Please provide a valid password.
-                            </div>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">LogIn</button>
-                        or
-                        <a href="#">register</a>
-                    </form>
-
-
-
-
-                    
-
-
-                    
-
-                </div>
-
-                <div class="col-4">
-                    <div class="my-title my-big-text">
-                        <a href="#" class="nav-link">Popular tags</a>
-                    </div>
-                    
-                    <div class="my-title">
-                        <button type="button" class="btn btn-outline-primary">Primary</button>
-                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                        <button type="button" class="btn btn-outline-success">Success</button>
-                        <button type="button" class="btn btn-outline-danger">Danger</button>
-                        <button type="button" class="btn btn-outline-warning">Warning</button>
-                        <button type="button" class="btn btn-outline-info">Info</button>
-                        <button type="button" class="btn btn-outline-dark">Dark</button>  
-                        <button type="button" class="btn btn-outline-primary">Primary</button>
-                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                        <button type="button" class="btn btn-outline-success">Success</button>
-                        <button type="button" class="btn btn-outline-danger">Danger</button>
-                        <button type="button" class="btn btn-outline-warning">Warning</button>
-                        <button type="button" class="btn btn-outline-info">Info</button>
-                        <button type="button" class="btn btn-outline-dark">Dark</button>  
-                        <button type="button" class="btn btn-outline-primary">Primary</button>
-                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                        <button type="button" class="btn btn-outline-success">Success</button>
-                        <button type="button" class="btn btn-outline-danger">Danger</button>
-                        <button type="button" class="btn btn-outline-warning">Warning</button>
-                        <button type="button" class="btn btn-outline-info">Info</button>
-                        <button type="button" class="btn btn-outline-dark">Dark</button> 
-                        <button type="button" class="btn btn-outline-primary">Primary</button>
-                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                        <button type="button" class="btn btn-outline-success">Success</button>
-                        <button type="button" class="btn btn-outline-danger">Danger</button>
-                        <button type="button" class="btn btn-outline-warning">Warning</button>
-                        <button type="button" class="btn btn-outline-info">Info</button>
-                        <button type="button" class="btn btn-outline-dark">Dark</button>  
-                        <button type="button" class="btn btn-outline-primary">Primary</button>
-                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                        <button type="button" class="btn btn-outline-success">Success</button>
-                        <button type="button" class="btn btn-outline-danger">Danger</button>
-                        <button type="button" class="btn btn-outline-warning">Warning</button>
-                        <button type="button" class="btn btn-outline-info">Info</button>
-                        <button type="button" class="btn btn-outline-dark">Dark</button>  
-                        <button type="button" class="btn btn-outline-primary">Primary</button>
-                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                        <button type="button" class="btn btn-outline-success">Success</button>
-                        <button type="button" class="btn btn-outline-danger">Danger</button>
-                        <button type="button" class="btn btn-outline-warning">Warning</button>
-                        <button type="button" class="btn btn-outline-info">Info</button>
-                        <button type="button" class="btn btn-outline-dark">Dark</button>    
-                    </div>
-                    
-                    
-                    <div class="my-title my-big-text">
-                        <a href="#" class="nav-link">Best members</a>
-                    </div>
-
-                    <div class="my-title">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action">m</a>
-                          
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">a</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">b</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-success">c</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">d</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">e</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-info">e</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-light">f</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">g</a>
-                          </div>
-                    </div>
-                </div>
-            </div>
-
-        </main>
-
-        <footer>
-            <div class="my-footer">
-                <div class="">
-                    Copyright © 2022 AskMeMalyshev
-                </div>
-            </div>
-        </footer>
-        
-    </body>
-</html>
+{% endblock main_column %}

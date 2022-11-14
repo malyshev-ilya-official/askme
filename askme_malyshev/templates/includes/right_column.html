@@ -1,0 +1,30 @@
+<div class="my-title my-big-text">
+    <a href="#" class="nav-link">Popular tags</a>
+</div>
+
+<div class="my-title">
+
+    {% for tag in tags %}
+
+        <a href="{% url "app:tag" slug=tag.title %}">
+            <button type="button" class="btn btn-outline-primary">{{tag.title}}</button>
+        </a>
+
+    {% endfor %}
+     
+</div>
+
+
+<div class="my-title my-big-text">
+    <a href="#" class="nav-link">Best members</a>
+</div>
+
+<div class="my-title">
+    <div class="list-group">
+
+        {% for usr in users %}
+            <a href="#" class="list-group-item list-group-item-action">{{usr.name}}</a>
+        {% endfor %}
+
+      </div>
+</div>

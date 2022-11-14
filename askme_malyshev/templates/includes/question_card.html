@@ -1,0 +1,49 @@
+{% load static %}
+
+<div class="question-card">
+    <div class="row">
+        <div class="col-3">
+            <div class="my-title">
+                <img src="{% static "img/default_picture.jpg" %}" class="my-middle-img" alt="your photo">
+            </div>
+
+            <div class="my-title">
+                likes: {{ question.likes }} <br>
+                <button type="button" class="btn btn-outline-success">Like</button>
+                <button type="button" class="btn btn-outline-danger">Dislike</button>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="my-title">
+                <div class="my-big-text">
+                    <a href="{% url "app:question" id=question.id %}" class="nav-link">
+                        {{ question.title }}
+                    </a>
+                </div>
+            </div>
+
+            <div class="my-text">
+                {{ question.text }}
+            </div>
+
+            <div class="my-title">
+                Tags:
+            
+            
+                <div class="">
+                    {% for tag in question.tags %}
+                        <a href="{% url "app:tag" slug=tag.title %}">
+                            <button type="button" class="btn btn-outline-primary">{{tag.title}}</button>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="my-title">
+                <a href="#">
+                    answer ( {{ question.answer_amount }})
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

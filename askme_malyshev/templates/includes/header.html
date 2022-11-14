@@ -1,0 +1,39 @@
+{% load static %}
+
+<header>
+    <div class="my-header">
+        <div class="row">
+            <div class="col-4 my-header-title">
+                <div>
+                    <a href="{% url "app:ask" %}" class="nav-link">AskMeMalyshev</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <form class="d-flex my-ask-form" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Ask" aria-label="Ask">
+                    <button class="btn btn-outline-success" type="submit">Ask</button>
+                </form>
+            </div>
+            <div class="col-4">
+                <div class="my-small-user-card">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="{% static "img/default_picture.jpg" %}" class="small-img" alt="photo">
+                        </div>
+
+                        <div class="col-8">
+                            <div>
+                                <h4>Your name</h4>
+                            </div>
+
+                            <nav class="nav nav-fill">
+                                <a class="nav-link" style="padding-left: 0px; padding-right: 0px;" href="{% url "app:settings" %}">settings</a>
+                                <a class="nav-link" style="padding-left: 0px; padding-right: 0px;" href="#">logout</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

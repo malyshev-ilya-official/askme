@@ -1,0 +1,31 @@
+{% load static %}
+
+<div class="answer-card">
+    <div class="row">
+        <div class="col-3">
+            <div class="my-title">
+                <img src="{% static "img/default_picture.jpg" %}" class="small-img" alt="your photo">
+            </div>
+
+            <div class="my-title">
+                likes: {{ answer.likes }} <br>
+                <button type="button" class="btn btn-outline-success">Like</button>
+                <button type="button" class="btn btn-outline-danger">Dislike</button>
+            </div>
+        </div>
+        <div class="col-9">
+
+            <div class="my-text">
+                {{ answer.text }}
+            </div>
+
+            <div class="form-check my-title">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Correct!
+                </label>
+            </div>
+            
+        </div>
+    </div>
+</div>

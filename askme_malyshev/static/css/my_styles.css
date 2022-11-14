@@ -122,4 +122,11 @@
     margin: 20px;
 }
 
+.my-centered-paginator {
+    height: fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
   

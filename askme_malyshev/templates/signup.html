@@ -2,12 +2,8 @@
 
 {% block main_column %}
 
-    <form action="" class="my-title">
-        <div class="my-title my-big-text">
-            Settings:
-            YourName
-        </div>
-
+    <form class="my-title">
+                            
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Login</label>
             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="pudabs">
@@ -23,6 +19,16 @@
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="gwdgdlwddj">
         </div>
 
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Repeat password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
         
         <div>
             <label for="image_uploads">Choose images to upload (PNG, JPG)</label>
@@ -34,9 +40,8 @@
                 <img src="../static/img/default_picture.jpg" class="my-middle-img" alt="your photo">
             </div>
         </div>
-        
 
-        <button type="button" class="btn btn-primary btn-lg">Save!</button>
+        <button type="submit" class="btn btn-primary">Register</button>
 
     </form>
 
